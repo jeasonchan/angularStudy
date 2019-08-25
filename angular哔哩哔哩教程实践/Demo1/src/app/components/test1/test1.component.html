@@ -1,0 +1,37 @@
+<p title="嘿嘿，我是这个标签的title">
+  {{title}}
+</p>
+
+<hr>
+<p>
+{{creator}}
+</p>
+
+<hr>
+<div title="我是div的固定值title">
+  鼠标放到我这里查看本div的title
+</div>
+
+<hr>
+<div [title]="titleNameForDiv">
+  <!-- 注意！！！！！如果属性不用中括号括起来，html会认为赋值是“titleNameForDiv”这个字符串，
+    有了中括号才回去ts文件中取值 -->
+  鼠标放到我这里查看本div的title
+</div>
+
+<hr>
+<div title="titleNameForDiv">
+  <!-- 不用中括号对 -->
+    鼠标放到我这里查看本div的title
+</div>
+
+<hr>
+<div >
+{{htmlContent}}<br>
+果然是只能当做纯文本内进行解析
+</div>
+
+<hr>
+<div [innerHTML]="htmlContent">
+占位
+</div>
