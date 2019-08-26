@@ -13,7 +13,24 @@ export class Test1Component implements OnInit {
 
   public titleNameForDiv: string;
 
-  public htmlContent:string="<p>这一段HTML</p>"
+  public htmlContent: string = "<p>这一段HTML</p>"
+
+  public array: any[] = [
+    {
+      name: "港独",
+      nick_name: "傻逼",
+      characters:["死全家","骨灰拌饭","坟头蹦迪"]
+    },
+    {
+      name: "台独",
+      nick_name: "傻逼",
+      characters:["死全家","骨灰拌饭","坟头蹦迪"]
+    },
+    {
+      name: "藏独",
+      nick_name: "傻逼",
+      characters:["死全家","骨灰拌饭","坟头蹦迪"]
+    }];
 
   constructor() {
     this.titleNameForDiv = "我是来自的组件属性的字符串，是div的title";

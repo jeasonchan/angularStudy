@@ -1,0 +1,17 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-test2',
+  templateUrl: './test2.component.html',
+  styleUrls: ['./test2.component.css']
+})
+export class Test2Component implements OnInit {
+
+  public baiduPictureurl: string = "https://www.baidu.com/img/bd_logo1.png?where=super";
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}

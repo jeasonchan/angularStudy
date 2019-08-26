@@ -4,7 +4,7 @@
 
 <hr>
 <p>
-{{creator}}
+  {{creator}}
 </p>
 
 <hr>
@@ -22,16 +22,33 @@
 <hr>
 <div title="titleNameForDiv">
   <!-- 不用中括号对 -->
-    鼠标放到我这里查看本div的title
+  鼠标放到我这里查看本div的title
 </div>
 
 <hr>
-<div >
-{{htmlContent}}<br>
-果然是只能当做纯文本内进行解析
+<div>
+  {{htmlContent}}<br>
+  果然是只能当做纯文本内进行解析
 </div>
 
 <hr>
 <div [innerHTML]="htmlContent">
-占位
+  占位
 </div>
+
+<hr>
+<div>显示一个复杂的有序和无序列表</div>
+<ol>
+  <li *ngFor="let item of array">
+    {{item.name+"是"+item.nick_name}}
+  </li>
+</ol>
+
+<ol>
+  <li *ngFor="let item of array">
+    {{item.name}}<br>
+    <ul>
+      <li *ngFor="let singleCharacter of item.characters">{{singleCharacter}}</li>
+    </ul>
+  </li>
+</ol>
