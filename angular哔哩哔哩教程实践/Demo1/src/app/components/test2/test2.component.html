@@ -8,3 +8,12 @@
 <img src="https://www.baidu.com/img/bd_logo1.png?where=super" alt="图片2的alt" title="图片2的title"><br>
 <img [src]=baiduPictureurl alt="图片2的alt" title="图片2的title"><br>
 
+
+<hr>
+<p>请使用这个简易的二元计算器！</p>
+<label>数字1</label><input type="number" [(ngModel)]="number1"><br>
+<label>数字2</label><input type="number" [(ngModel)]="number2"><br>
+<label>运算符</label><input type="text" [(ngModel)]="operator"><br>
+<button (click)="getResult()">结果</button><input type="text" [(ngModel)]="result"><br>
+
+<hr>
