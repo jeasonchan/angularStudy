@@ -16,4 +16,13 @@ export class TestComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  public getDate() {
+    return new Date();
+  }
+
+  public showOne(input: string) {
+    console.log(input);
+  }
+
 }

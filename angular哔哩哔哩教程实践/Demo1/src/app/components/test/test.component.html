@@ -8,4 +8,16 @@
   <button class="mat-menu-item">按钮2</button>
   <button class="mat-menu-item">按钮2</button>
 </mat-menu>
-git
+<hr>
+<span>{{getDate()}}</span>
+<hr>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <div class="panel-title">模板引用变量1</div>
+  </div>
+  <div class="panel-body">
+    <input type="text" name="phone" placeholder="请输入手机号" class="form-control"
+           #phone (blur)="showOne(phone.value);"><br>
+    <span class="lable lable-primary">{{phone.value}}</span>
+  </div>
+</div>
