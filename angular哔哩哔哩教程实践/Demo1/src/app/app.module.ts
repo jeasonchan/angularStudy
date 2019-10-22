@@ -1,16 +1,17 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 
-import { AppComponent } from './app.component';
-import { Test1Component } from './components/test1/test1.component';
-import { Test2Component } from './components/test2/test2.component';
-import { Test3Component } from './components/test3/test3.component';
-import { TestComponent } from './components/test/test.component';
-import {MatMenuModule} from '@angular/material';
+import {AppComponent} from './app.component';
+import {Test1Component} from './components/test1/test1.component';
+import {Test2Component} from './components/test2/test2.component';
+import {Test3Component} from './components/test3/test3.component';
+import {TestComponent} from './components/test/test.component';
+import {MatMenuModule, MatInputModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -26,9 +27,11 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     FormsModule,
     HttpClientModule,
     MatMenuModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

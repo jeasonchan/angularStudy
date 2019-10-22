@@ -2,12 +2,14 @@
   test works!
 </p>
 <hr>
-<button class="mat-button" [matMenuTriggerFor]="menuButtons">菜单</button>
+<button mat-button class="mat-flat-button" [matMenuTriggerFor]="menuButtons">菜单</button>
 <mat-menu #menuButtons="matMenu">
   <button class="mat-menu-item">按钮1</button>
   <button class="mat-menu-item">按钮2</button>
   <button class="mat-menu-item">按钮2</button>
 </mat-menu>
+
+
 <hr>
 <span>{{getDate()}}</span>
 <hr>
@@ -21,3 +23,19 @@
     <span class="lable lable-primary">{{phone.value}}</span>
   </div>
 </div>
+
+
+<hr>
+<mat-form-field>
+<input matInput placeholder="输入你的名字" value="jeason">
+</mat-form-field>
+
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Favorite food" value="Sushi">
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width">
+    <textarea matInput placeholder="Leave a comment"></textarea>
+  </mat-form-field>
+</form>
