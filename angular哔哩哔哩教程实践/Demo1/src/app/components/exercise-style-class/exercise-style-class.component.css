@@ -1,0 +1,14 @@
+/*
+一个针对div的样式
+*/
+div.myClass {
+  border-top: red 1px solid;
+
+}
+
+/*
+一个通用的样式
+ */
+.universalClass{
+  border-top: red 1px solid;
+}
